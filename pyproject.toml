@@ -12,7 +12,7 @@ arrow = "^1.2.3"
 click = "^8.1.6"
 iota-sdk = "1.0.0rc0"
 dacite = "^1.8.1"
-humps = "^0.2.2"
+pyhumps = "^3.8.0"
 
 [tool.poetry.group.dev.dependencies]
 python-dotenv = "^1.0.0"
