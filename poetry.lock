@@ -43,19 +43,30 @@ files = [
 ]
 
 [[package]]
-name = "exceptiongroup"
-version = "1.1.2"
-description = "Backport of PEP 654 (exception groups)"
-category = "dev"
+name = "dacite"
+version = "1.8.1"
+description = "Simple creation of data classes from dictionaries."
+category = "main"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.6"
 files = [
-    {file = "exceptiongroup-1.1.2-py3-none-any.whl", hash = "sha256:e346e69d186172ca7cf029c8c1d16235aa0e04035e5750b4b95039e65204328f"},
-    {file = "exceptiongroup-1.1.2.tar.gz", hash = "sha256:12c3e887d6485d16943a309616de20ae5582633e0a2eda17f4e10fd61c1e8af5"},
+    {file = "dacite-1.8.1-py3-none-any.whl", hash = "sha256:cc31ad6fdea1f49962ea42db9421772afe01ac5442380d9a99fcf3d188c61afe"},
 ]
 
 [package.extras]
-test = ["pytest (>=6)"]
+dev = ["black", "coveralls", "mypy", "pre-commit", "pylint", "pytest (>=5)", "pytest-benchmark", "pytest-cov"]
+
+[[package]]
+name = "humps"
+version = "0.2.2"
+description = "camelCase converter"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "humps-0.2.2-py2.py3-none-any.whl", hash = "sha256:401de60fd73673b697086ba7c865966751c57b11cce57a37c9eabb3e75938417"},
+    {file = "humps-0.2.2.tar.gz", hash = "sha256:777f7a17f6b20aa9cc078d63b56ebd66532c6b2c88b370f1d596d5205410f67c"},
+]
 
 [[package]]
 name = "iniconfig"
@@ -71,13 +82,28 @@ files = [
 
 [[package]]
 name = "iota-sdk"
-version = "0.1.0"
-description = ""
+version = "1.0.0rc0"
+description = "Python bindings for the IOTA SDK library"
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "iota_sdk-0.1.0-py3-none-any.whl", hash = "sha256:ab3a810bfe9c629c7c25be45bd1bee8126ec35f59950f6a3686deaccdbf9ebb9"},
+    {file = "iota_sdk-1.0.0rc0-cp310-cp310-macosx_10_14_x86_64.whl", hash = "sha256:8ca21bcd5d412d57f2cdd89e29088bbc704331b040e36f1eba99e5fcd89fba3f"},
+    {file = "iota_sdk-1.0.0rc0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:13a2582d567327d8bf894c23770a6679ffed8b3429c2d3f0f483380e74e76a94"},
+    {file = "iota_sdk-1.0.0rc0-cp310-cp310-manylinux_2_35_x86_64.whl", hash = "sha256:ac429c14761401997a2667607f5015e0519df188748013df936048a22e50f939"},
+    {file = "iota_sdk-1.0.0rc0-cp310-none-win_amd64.whl", hash = "sha256:5fc18c2a48d166d14f95c25cc078ffb90739663726fdaca5e2b233a2c6889237"},
+    {file = "iota_sdk-1.0.0rc0-cp311-cp311-macosx_10_14_x86_64.whl", hash = "sha256:af0a3e4a06e76236e7c0375116a28dbc6ceded023bf018ccb041979c878c2aa7"},
+    {file = "iota_sdk-1.0.0rc0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:702fe539d8dcf83a9226a02a2c3d252c1d9f65f97242567b508aaa5be39f61bf"},
+    {file = "iota_sdk-1.0.0rc0-cp311-cp311-manylinux_2_35_x86_64.whl", hash = "sha256:e10338acb68ac8814c947a0124cddcdfd0287c94fc0b50fb455dc51cbb6dbc2c"},
+    {file = "iota_sdk-1.0.0rc0-cp311-none-win_amd64.whl", hash = "sha256:43b3b082178d533ce3897808859c2a4d3f1764d9085870d1de62e0632c9f6a4d"},
+    {file = "iota_sdk-1.0.0rc0-cp38-cp38-macosx_10_14_x86_64.whl", hash = "sha256:482c92c4f4084d289bf16d36c1c188bf27306f18e32884ef729427029cdf9db2"},
+    {file = "iota_sdk-1.0.0rc0-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:9228567e277408597ddab3961636bf9e7c2a8d774145a468c6ed40907cfc6211"},
+    {file = "iota_sdk-1.0.0rc0-cp38-cp38-manylinux_2_35_x86_64.whl", hash = "sha256:cf53cc9a64a2fd18968fd1b414e9c574e203f9d11fb061184cd4c67088f1ac52"},
+    {file = "iota_sdk-1.0.0rc0-cp38-none-win_amd64.whl", hash = "sha256:97f0601ffd82ce840afa9f537d30286c31588e03cf2b0dd7db749fe5d52d7366"},
+    {file = "iota_sdk-1.0.0rc0-cp39-cp39-macosx_10_14_x86_64.whl", hash = "sha256:1e315b84db2e8e52d2ad4a2430e275911e5e2b76727be62b417255b612a9338c"},
+    {file = "iota_sdk-1.0.0rc0-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:e4d9fab148b3267d3487022cd1be26d5ccec9ea78936e40130b3b3e97af2a03c"},
+    {file = "iota_sdk-1.0.0rc0-cp39-cp39-manylinux_2_35_x86_64.whl", hash = "sha256:58931981061a22d28dc3d538c25b307431616dac8d6ae5c4b01ef188a9a77c29"},
+    {file = "iota_sdk-1.0.0rc0-cp39-none-win_amd64.whl", hash = "sha256:2c6e2d4f9a5c695a59306798dcd2c6cbb0f9603f93f106d1e556dbb623ed4af9"},
 ]
 
 [[package]]
@@ -122,11 +148,9 @@ files = [
 
 [package.dependencies]
 colorama = {version = "*", markers = "sys_platform == \"win32\""}
-exceptiongroup = {version = ">=1.0.0rc8", markers = "python_version < \"3.11\""}
 iniconfig = "*"
 packaging = "*"
 pluggy = ">=0.12,<2.0"
-tomli = {version = ">=1.0.0", markers = "python_version < \"3.11\""}
 
 [package.extras]
 testing = ["argcomplete", "attrs (>=19.2.0)", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "setuptools", "xmlschema"]
@@ -173,19 +197,7 @@ files = [
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
 ]
 
-[[package]]
-name = "tomli"
-version = "2.0.1"
-description = "A lil' TOML parser"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
-    {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
-]
-
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.9"
-content-hash = "554d0f8dec866eae9a16ceee29c6971c18612cb55bbfd57f6453706920c2f405"
+python-versions = "^3.11"
+content-hash = "3be6dd899f151620608955dbb521d011edf88e702877bacf258e81f0aa22d54e"

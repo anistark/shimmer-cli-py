@@ -1,6 +1,6 @@
 from click.testing import CliRunner
 
-from shimpy.shimpy import shimpy
+from shimpy.cli import shimpy
 
 def test_shimpy_cli():
     runner = CliRunner()
