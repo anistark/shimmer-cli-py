@@ -8,6 +8,7 @@ from .node import commands as node
 from .account import commands as account
 from .address import commands as address
 from .nft import commands as nft
+from .transactions import commands as transactions
 
 @click.group()
 def shimpy():
@@ -17,3 +18,4 @@ shimpy.add_command(node.info)
 shimpy.add_command(account.account)
 shimpy.add_command(address.address)
 shimpy.add_command(nft.nft)
+shimpy.add_command(transactions.send)

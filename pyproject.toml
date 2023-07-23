@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "shimpy"
-version = "0.0.1"
+version = "0.0.2"
 description = "Sample CLI Tool to interact with Shimmer Network."
 authors = ["Kumar Anirudha <mail@anirudha.dev>"]
 license = "MIT"
