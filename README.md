@@ -1,5 +1,10 @@
 # Shimpy
 
+![PyPI](https://img.shields.io/pypi/v/shimpy)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/shimpy)
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/shimpy)
+
 Sample CLI Tool to interact with Shimmer Network using [iota-sdk](https://pypi.org/project/iota-sdk/).
 
 ## Install
