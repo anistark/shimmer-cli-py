@@ -10,7 +10,7 @@ readme = "README.md"
 python = "^3.11"
 arrow = "^1.2.3"
 click = "^8.1.6"
-iota-sdk = "1.0.0rc1"
+iota-sdk = "1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 python-dotenv = "^1.0.0"
